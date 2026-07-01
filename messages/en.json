@@ -1,0 +1,279 @@
+{
+  "common": {
+    "appName": "MyHair",
+    "tagline": "Booking system for barbershops",
+    "login": "Log in",
+    "logout": "Log out",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "loading": "Loading...",
+    "error": "Something went wrong"
+  },
+  "home": {
+    "title": "Run your barbershop with ease",
+    "subtitle": "Online bookings, staff management, schedules, and a dedicated website for every shop.",
+    "cta": "Get started",
+    "features": {
+      "bookings": "Online bookings",
+      "bookingsDesc": "Clients book from your website; you approve with one click.",
+      "staff": "Staff management",
+      "staffDesc": "Create accounts for barbers and manage their schedules.",
+      "website": "Dedicated website",
+      "websiteDesc": "Every shop gets its own public page with a subdomain."
+    }
+  },
+  "booking": {
+    "status": {
+      "PENDING": "Pending",
+      "APPROVED": "Approved",
+      "REJECTED": "Rejected",
+      "CANCELLED": "Cancelled",
+      "COMPLETED": "Completed"
+    },
+    "guestInfo": "Clients provide name and phone — confirmations are sent by SMS."
+  },
+  "roles": {
+    "SUPER_ADMIN": "Administrator",
+    "OWNER": "Owner",
+    "STAFF": "Barber"
+  },
+  "auth": {
+    "title": "Sign in",
+    "subtitle": "For platform admins, shop owners, and barber staff.",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign in",
+    "signingIn": "Signing in...",
+    "invalidCredentials": "Invalid email or password."
+  },
+  "admin": {
+    "badge": "Super Admin",
+    "title": "Admin panel",
+    "description": "Create and manage barbershops (tenants) on the platform.",
+    "tenants": {
+      "createTitle": "New barbershop",
+      "createDesc": "Creates the shop, subdomain, and owner account.",
+      "shopSection": "Shop details",
+      "ownerSection": "Owner account",
+      "shopName": "Shop name",
+      "slug": "Slug (optional)",
+      "slugPlaceholder": "auto from name",
+      "subdomain": "Subdomain (optional)",
+      "subdomainPlaceholder": "same as slug",
+      "phone": "Phone",
+      "shopEmail": "Shop email",
+      "address": "Address",
+      "ownerName": "Owner name",
+      "ownerEmail": "Owner email",
+      "ownerPassword": "Initial password",
+      "createButton": "Create shop",
+      "creating": "Creating...",
+      "success": "Barbershop created successfully.",
+      "listTitle": "Barbershops",
+      "listCount": "{count} shops total",
+      "empty": "No shops yet. Create the first one above.",
+      "columns": {
+        "shop": "Shop",
+        "owner": "Owner",
+        "url": "Website",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "toggling": "Updating...",
+      "errors": {
+        "UNAUTHORIZED": "You are not allowed to perform this action.",
+        "VALIDATION_ERROR": "Please check the form fields.",
+        "SLUG_TAKEN": "This slug is already taken.",
+        "SUBDOMAIN_TAKEN": "This subdomain is already taken.",
+        "EMAIL_TAKEN": "This email is already in use.",
+        "UNKNOWN": "Something went wrong. Please try again."
+      }
+    }
+  },
+  "dashboard": {
+    "badge": "Dashboard",
+    "title": "Shop dashboard",
+    "welcome": "Welcome, {name}!",
+    "nav": {
+      "overview": "Overview",
+      "bookings": "Bookings",
+      "staff": "Staff",
+      "services": "Services",
+      "schedule": "Schedule"
+    },
+    "forbidden": {
+      "ownerOnly": "This page is only available to the shop owner."
+    },
+    "cards": {
+      "bookings": {
+        "title": "Bookings",
+        "desc": "View and approve client requests."
+      },
+      "staff": {
+        "title": "Staff",
+        "desc": "Manage barbers and their accounts."
+      },
+      "services": {
+        "title": "Services",
+        "desc": "Add and update prices and durations."
+      },
+      "schedule": {
+        "title": "Schedule",
+        "desc": "Set weekly hours for each barber."
+      }
+    },
+    "staff": {
+      "pageTitle": "Staff management",
+      "pageDesc": "Create accounts for barbers working at your shop.",
+      "createTitle": "New barber",
+      "createDesc": "Barber signs in with email; booking alerts go to their phone via SMS.",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone (for SMS)",
+      "password": "Password",
+      "createButton": "Add barber",
+      "creating": "Adding...",
+      "success": "Barber added successfully.",
+      "listTitle": "Team",
+      "listCount": "{count} barbers",
+      "empty": "No barbers yet. Add the first one.",
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "toggling": "Updating...",
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "errors": {
+        "UNAUTHORIZED": "You are not signed in.",
+        "FORBIDDEN": "You are not allowed to do this.",
+        "VALIDATION_ERROR": "Please check the fields.",
+        "EMAIL_TAKEN": "This email is already in use.",
+        "NOT_FOUND": "Barber not found.",
+        "UNKNOWN": "Something went wrong."
+      }
+    },
+    "services": {
+      "pageTitle": "Services",
+      "pageDesc": "Define the services your shop offers.",
+      "createTitle": "New service",
+      "createDesc": "Names in Albanian and English for the public website.",
+      "nameSq": "Name (SQ)",
+      "nameEn": "Name (EN)",
+      "duration": "Duration (min)",
+      "price": "Price (€)",
+      "descriptionSq": "Description (SQ)",
+      "descriptionEn": "Description (EN)",
+      "createButton": "Add service",
+      "creating": "Adding...",
+      "success": "Service added successfully.",
+      "listTitle": "Service list",
+      "listCount": "{count} services",
+      "empty": "No services yet.",
+      "meta": "{duration} min · €{price}",
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "toggling": "Updating...",
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "errors": {
+        "UNAUTHORIZED": "You are not signed in.",
+        "FORBIDDEN": "You are not allowed to do this.",
+        "VALIDATION_ERROR": "Please check the fields.",
+        "NOT_FOUND": "Service not found.",
+        "UNKNOWN": "Something went wrong."
+      }
+    },
+    "schedule": {
+      "pageTitle": "Schedule",
+      "pageDescOwner": "Set work days and hours for each barber.",
+      "pageDescStaff": "Your weekly work schedule.",
+      "title": "Weekly schedule",
+      "desc": "Choose active days and working hours.",
+      "selectStaff": "Barber",
+      "working": "Working",
+      "save": "Save schedule",
+      "saving": "Saving...",
+      "success": "Schedule saved.",
+      "noStaff": "Add barbers first on the Staff page.",
+      "days": {
+        "MONDAY": "Monday",
+        "TUESDAY": "Tuesday",
+        "WEDNESDAY": "Wednesday",
+        "THURSDAY": "Thursday",
+        "FRIDAY": "Friday",
+        "SATURDAY": "Saturday",
+        "SUNDAY": "Sunday"
+      },
+      "errors": {
+        "UNAUTHORIZED": "You are not signed in.",
+        "FORBIDDEN": "You are not allowed to do this.",
+        "VALIDATION_ERROR": "Please check the times.",
+        "NOT_FOUND": "Barber not found.",
+        "UNKNOWN": "Something went wrong."
+      }
+    },
+    "bookings": {
+      "pageTitle": "Bookings",
+      "pageDesc": "Approve or reject client requests.",
+      "empty": "No bookings yet.",
+      "barber": "Barber",
+      "datetime": "Date & time",
+      "services": "Services",
+      "notes": "Notes",
+      "approve": "Approve",
+      "reject": "Reject"
+    }
+  },
+  "shop": {
+    "badge": "Barbershop",
+    "address": "Address",
+    "phone": "Phone",
+    "bookCta": "Book now",
+    "teamTitle": "Our team",
+    "noTeam": "No barbers available right now.",
+    "servicesTitle": "Services",
+    "noServices": "No services listed yet.",
+    "booking": {
+      "pageTitle": "Book an appointment",
+      "pageDesc": "Choose a barber, services, and time at {shop}.",
+      "stepBarber": "Choose barber",
+      "stepServices": "Choose services",
+      "stepDateTime": "Date & time",
+      "stepContact": "Your details",
+      "guestInfo": "You'll get confirmation by SMS on your phone — no account needed.",
+      "name": "Name",
+      "phone": "Phone number",
+      "emailOptional": "Email (optional)",
+      "notes": "Notes (optional)",
+      "pickServicesFirst": "Select services first.",
+      "loadingSlots": "Loading available times...",
+      "noSlots": "No available slots for this day.",
+      "noBarbers": "No barbers available for booking.",
+      "summary": "Total: €{price} · {date} at {time}",
+      "submit": "Submit request",
+      "submitting": "Submitting...",
+      "successTitle": "Request sent!",
+      "successDesc": "The barber will review it and you'll get a reply by SMS.",
+      "backToShop": "Back to shop",
+      "errors": {
+        "VALIDATION_ERROR": "Please check the form fields.",
+        "INVALID_PHONE": "Invalid phone number (e.g. +355 6x xxx xxxx).",
+        "NOT_FOUND": "Shop or barber not found.",
+        "SLOT_UNAVAILABLE": "This slot is no longer available. Pick another.",
+        "UNKNOWN": "Something went wrong. Please try again."
+      }
+    }
+  }
+}

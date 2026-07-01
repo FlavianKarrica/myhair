@@ -1,0 +1,279 @@
+{
+  "common": {
+    "appName": "MyHair",
+    "tagline": "Sistemi i rezervimeve për berberi",
+    "login": "Hyr",
+    "logout": "Dil",
+    "save": "Ruaj",
+    "cancel": "Anulo",
+    "delete": "Fshi",
+    "edit": "Ndrysho",
+    "back": "Kthehu",
+    "loading": "Duke u ngarkuar...",
+    "error": "Ndodhi një gabim"
+  },
+  "home": {
+    "title": "Menaxho berberinë tënde me lehtësi",
+    "subtitle": "Rezervime online, menaxhim stafi, orare dhe website për çdo berberi.",
+    "cta": "Fillo tani",
+    "features": {
+      "bookings": "Rezervime online",
+      "bookingsDesc": "Klientët rezervojnë nga website-i juaj, ju aprovoni me një klik.",
+      "staff": "Menaxhim stafi",
+      "staffDesc": "Krijoni llogari për berberët dhe menaxhoni oraret e tyre.",
+      "website": "Website i dedikuar",
+      "websiteDesc": "Çdo berberi merr faqen e vet publike me subdomain."
+    }
+  },
+  "booking": {
+    "status": {
+      "PENDING": "Në pritje",
+      "APPROVED": "Aprovuar",
+      "REJECTED": "Refuzuar",
+      "CANCELLED": "Anuluar",
+      "COMPLETED": "Përfunduar"
+    },
+    "guestInfo": "Klienti jep emrin dhe telefonin — konfirmimi bëhet me SMS."
+  },
+  "roles": {
+    "SUPER_ADMIN": "Administrator",
+    "OWNER": "Pronar",
+    "STAFF": "Berber"
+  },
+  "auth": {
+    "title": "Hyr në llogari",
+    "subtitle": "Për administratorë, pronarë dhe staf berberie.",
+    "email": "Email",
+    "password": "Fjalëkalimi",
+    "signIn": "Hyr",
+    "signingIn": "Duke u futur...",
+    "invalidCredentials": "Email ose fjalëkalim i gabuar."
+  },
+  "admin": {
+    "badge": "Super Admin",
+    "title": "Paneli i administratorit",
+    "description": "Krijoni dhe menaxhoni berberitë (tenants) në platformë.",
+    "tenants": {
+      "createTitle": "Berber i ri",
+      "createDesc": "Krijon berberinë, subdomain-in dhe llogarinë e pronarit.",
+      "shopSection": "Të dhënat e berberisë",
+      "ownerSection": "Llogaria e pronarit",
+      "shopName": "Emri i berberisë",
+      "slug": "Slug (opsional)",
+      "slugPlaceholder": "auto nga emri",
+      "subdomain": "Subdomain (opsional)",
+      "subdomainPlaceholder": "i njëjti me slug",
+      "phone": "Telefon",
+      "shopEmail": "Email i berberisë",
+      "address": "Adresa",
+      "ownerName": "Emri i pronarit",
+      "ownerEmail": "Email i pronarit",
+      "ownerPassword": "Fjalëkalimi fillestar",
+      "createButton": "Krijo berberinë",
+      "creating": "Duke krijuar...",
+      "success": "Berberia u krijua me sukses.",
+      "listTitle": "Berberitë",
+      "listCount": "{count} berberi në total",
+      "empty": "Asnjë berberi ende. Krijoni të parin më lart.",
+      "columns": {
+        "shop": "Berberia",
+        "owner": "Pronari",
+        "url": "Website",
+        "status": "Statusi",
+        "actions": "Veprime"
+      },
+      "status": {
+        "active": "Aktiv",
+        "inactive": "Joaktiv"
+      },
+      "activate": "Aktivizo",
+      "deactivate": "Çaktivizo",
+      "toggling": "Duke ndryshuar...",
+      "errors": {
+        "UNAUTHORIZED": "Nuk keni leje për këtë veprim.",
+        "VALIDATION_ERROR": "Kontrolloni fushat e formularit.",
+        "SLUG_TAKEN": "Ky slug ekziston tashmë.",
+        "SUBDOMAIN_TAKEN": "Ky subdomain ekziston tashmë.",
+        "EMAIL_TAKEN": "Ky email përdoret tashmë.",
+        "UNKNOWN": "Ndodhi një gabim. Provoni përsëri."
+      }
+    }
+  },
+  "dashboard": {
+    "badge": "Dashboard",
+    "title": "Paneli i berberisë",
+    "welcome": "Mirë se vini, {name}!",
+    "nav": {
+      "overview": "Përmbledhje",
+      "bookings": "Rezervime",
+      "staff": "Stafi",
+      "services": "Shërbimet",
+      "schedule": "Orari"
+    },
+    "forbidden": {
+      "ownerOnly": "Kjo faqe është e disponueshme vetëm për pronarin e berberisë."
+    },
+    "cards": {
+      "bookings": {
+        "title": "Rezervime",
+        "desc": "Shikoni dhe aprovoni kërkesat e klientëve."
+      },
+      "staff": {
+        "title": "Stafi",
+        "desc": "Menaxhoni berberët dhe llogaritë e tyre."
+      },
+      "services": {
+        "title": "Shërbimet",
+        "desc": "Shtoni dhe ndryshoni çmimet dhe kohëzgjatjet."
+      },
+      "schedule": {
+        "title": "Orari",
+        "desc": "Caktoni orarin javor për çdo berber."
+      }
+    },
+    "staff": {
+      "pageTitle": "Menaxhimi i stafit",
+      "pageDesc": "Krijoni llogari për berberët që punojnë në berberinë tuaj.",
+      "createTitle": "Berber i ri",
+      "createDesc": "Berberi hyn me email; njoftimet i merr me SMS në telefon.",
+      "name": "Emri",
+      "email": "Email",
+      "phone": "Telefon (për SMS)",
+      "password": "Fjalëkalimi",
+      "createButton": "Shto berber",
+      "creating": "Duke shtuar...",
+      "success": "Berberi u shtua me sukses.",
+      "listTitle": "Ekipi",
+      "listCount": "{count} berberë",
+      "empty": "Asnjë berber ende. Shtoni të parin.",
+      "activate": "Aktivizo",
+      "deactivate": "Çaktivizo",
+      "toggling": "Duke ndryshuar...",
+      "status": {
+        "active": "Aktiv",
+        "inactive": "Joaktiv"
+      },
+      "errors": {
+        "UNAUTHORIZED": "Nuk jeni i autentifikuar.",
+        "FORBIDDEN": "Nuk keni leje për këtë veprim.",
+        "VALIDATION_ERROR": "Kontrolloni fushat.",
+        "EMAIL_TAKEN": "Ky email përdoret tashmë.",
+        "NOT_FOUND": "Berberi nuk u gjet.",
+        "UNKNOWN": "Ndodhi një gabim."
+      }
+    },
+    "services": {
+      "pageTitle": "Shërbimet",
+      "pageDesc": "Përcaktoni shërbimet që ofron berberia juaj.",
+      "createTitle": "Shërbim i ri",
+      "createDesc": "Emri në shqip dhe anglisht për website-in publik.",
+      "nameSq": "Emri (SQ)",
+      "nameEn": "Emri (EN)",
+      "duration": "Kohëzgjatja (min)",
+      "price": "Çmimi (€)",
+      "descriptionSq": "Përshkrimi (SQ)",
+      "descriptionEn": "Përshkrimi (EN)",
+      "createButton": "Shto shërbimin",
+      "creating": "Duke shtuar...",
+      "success": "Shërbimi u shtua me sukses.",
+      "listTitle": "Lista e shërbimeve",
+      "listCount": "{count} shërbime",
+      "empty": "Asnjë shërbim ende.",
+      "meta": "{duration} min · {price} €",
+      "activate": "Aktivizo",
+      "deactivate": "Çaktivizo",
+      "toggling": "Duke ndryshuar...",
+      "status": {
+        "active": "Aktiv",
+        "inactive": "Joaktiv"
+      },
+      "errors": {
+        "UNAUTHORIZED": "Nuk jeni i autentifikuar.",
+        "FORBIDDEN": "Nuk keni leje për këtë veprim.",
+        "VALIDATION_ERROR": "Kontrolloni fushat.",
+        "NOT_FOUND": "Shërbimi nuk u gjet.",
+        "UNKNOWN": "Ndodhi një gabim."
+      }
+    },
+    "schedule": {
+      "pageTitle": "Orari",
+      "pageDescOwner": "Vendosni ditët dhe oraret e punës për çdo berber.",
+      "pageDescStaff": "Orari juaj javor i punës.",
+      "title": "Orari javor",
+      "desc": "Zgjidhni ditët aktive dhe oraret e punës.",
+      "selectStaff": "Berberi",
+      "working": "Punon",
+      "save": "Ruaj orarin",
+      "saving": "Duke ruajtur...",
+      "success": "Orari u ruajt.",
+      "noStaff": "Shtoni së pari berberë te faqja Stafi.",
+      "days": {
+        "MONDAY": "E hënë",
+        "TUESDAY": "E martë",
+        "WEDNESDAY": "E mërkurë",
+        "THURSDAY": "E enjte",
+        "FRIDAY": "E premte",
+        "SATURDAY": "E shtunë",
+        "SUNDAY": "E diel"
+      },
+      "errors": {
+        "UNAUTHORIZED": "Nuk jeni i autentifikuar.",
+        "FORBIDDEN": "Nuk keni leje për këtë veprim.",
+        "VALIDATION_ERROR": "Kontrolloni oraret.",
+        "NOT_FOUND": "Berberi nuk u gjet.",
+        "UNKNOWN": "Ndodhi një gabim."
+      }
+    },
+    "bookings": {
+      "pageTitle": "Rezervimet",
+      "pageDesc": "Aprovoni ose refuzoni kërkesat e klientëve.",
+      "empty": "Asnjë rezervim ende.",
+      "barber": "Berberi",
+      "datetime": "Data dhe ora",
+      "services": "Shërbimet",
+      "notes": "Shënime",
+      "approve": "Aprovo",
+      "reject": "Refuzo"
+    }
+  },
+  "shop": {
+    "badge": "Berberi",
+    "address": "Adresa",
+    "phone": "Telefon",
+    "bookCta": "Rezervo tani",
+    "teamTitle": "Ekipi ynë",
+    "noTeam": "Aktualisht nuk ka berberë të disponueshëm.",
+    "servicesTitle": "Shërbimet",
+    "noServices": "Nuk ka shërbime të listuara ende.",
+    "booking": {
+      "pageTitle": "Rezervo termin",
+      "pageDesc": "Zgjidhni berberin, shërbimet dhe orarin te {shop}.",
+      "stepBarber": "Zgjidh berberin",
+      "stepServices": "Zgjidh shërbimet",
+      "stepDateTime": "Data dhe ora",
+      "stepContact": "Të dhënat tuaja",
+      "guestInfo": "Do të merrni konfirmimin me SMS në numrin tuaj — nuk nevojitet llogari.",
+      "name": "Emri",
+      "phone": "Numri i telefonit",
+      "emailOptional": "Email (opsional)",
+      "notes": "Shënime (opsionale)",
+      "pickServicesFirst": "Zgjidhni së pari shërbimet.",
+      "loadingSlots": "Duke ngarkuar oraret...",
+      "noSlots": "Nuk ka orare të lira për këtë ditë.",
+      "noBarbers": "Nuk ka berberë të disponueshëm për rezervim.",
+      "summary": "Totali: {price} € · {date} në {time}",
+      "submit": "Dërgo kërkesën",
+      "submitting": "Duke dërguar...",
+      "successTitle": "Kërkesa u dërgua!",
+      "successDesc": "Berberi do ta shqyrtojë dhe do të merrni përgjigjen me SMS.",
+      "backToShop": "Kthehu te berberia",
+      "errors": {
+        "VALIDATION_ERROR": "Kontrolloni fushat e formularit.",
+        "INVALID_PHONE": "Numri i telefonit nuk është valid (p.sh. +355 6x xxx xxxx).",
+        "NOT_FOUND": "Berberia ose berberi nuk u gjet.",
+        "SLOT_UNAVAILABLE": "Ky orar nuk është më i lirë. Zgjidhni një tjetër.",
+        "UNKNOWN": "Ndodhi një gabim. Provoni përsëri."
+      }
+    }
+  }
+}

@@ -1,8 +1,10 @@
 import { setRequestLocale } from "next-intl/server";
-import { getTranslations } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
-import { CreateTenantForm } from "@/components/admin/create-tenant-form";
-import { TenantList } from "@/components/admin/tenant-list";
+import { AdminTenantsList } from "@/components/admin/admin-tenants-list";
+import {
+  computeAdminStats,
+  type AdminTenantSummary,
+} from "@/lib/admin/tenant-shared";
 import { getTenantsForAdmin } from "@/lib/admin/tenants";
 
 type Props = {
@@ -12,27 +14,24 @@ type Props = {
 export default async function AdminPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale as Locale);
-  const t = await getTranslations("admin");
 
-  let tenants: Awaited<ReturnType<typeof getTenantsForAdmin>> = [];
+  let tenants: AdminTenantSummary[] = [];
+  let errorMessage: string | undefined;
 
   try {
     tenants = await getTenantsForAdmin();
   } catch {
-    tenants = [];
+    errorMessage =
+      "Nuk u ngarkuan berberitë. Kontrolloni lidhjen me databazën.";
   }
 
-  return (
-    <div className="space-y-8">
-      <div>
-        <h1 className="text-2xl font-semibold">{t("title")}</h1>
-        <p className="mt-2 text-zinc-600">{t("description")}</p>
-      </div>
+  const stats = computeAdminStats(tenants);
 
-      <div className="grid gap-8 xl:grid-cols-[400px_1fr]">
-        <CreateTenantForm />
-        <TenantList tenants={tenants} />
-      </div>
-    </div>
+  return (
+    <AdminTenantsList
+      tenants={tenants}
+      stats={stats}
+      errorMessage={errorMessage}
+    />
   );
 }

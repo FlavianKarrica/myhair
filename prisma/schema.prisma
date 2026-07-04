@@ -32,7 +32,7 @@ enum DayOfWeek {
 }
 
 model Tenant {
-  id          String   @id @default(cuid())
+  id          String   @id @default(uuid())
   name        String
   slug        String   @unique
   subdomain   String?  @unique
@@ -42,6 +42,9 @@ model Tenant {
   phone       String?
   email       String?
   isActive    Boolean  @default(true)
+  isTrial     Boolean  @default(false)
+  expiresAt   DateTime?
+  adminNotes  String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
@@ -51,7 +54,7 @@ model Tenant {
 }
 
 model User {
-  id           String   @id @default(cuid())
+  id           String   @id @default(uuid())
   email        String   @unique
   passwordHash String
   name         String
@@ -72,7 +75,7 @@ model User {
 }
 
 model Service {
-  id              String   @id @default(cuid())
+  id              String   @id @default(uuid())
   tenantId        String
   tenant          Tenant   @relation(fields: [tenantId], references: [id], onDelete: Cascade)
   nameSq          String
@@ -90,7 +93,7 @@ model Service {
 }
 
 model StaffService {
-  id        String  @id @default(cuid())
+  id        String  @id @default(uuid())
   userId    String
   user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
   serviceId String
@@ -100,7 +103,7 @@ model StaffService {
 }
 
 model Schedule {
-  id        String    @id @default(cuid())
+  id        String    @id @default(uuid())
   userId    String
   user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   dayOfWeek DayOfWeek
@@ -111,7 +114,7 @@ model Schedule {
 }
 
 model TimeOff {
-  id        String   @id @default(cuid())
+  id        String   @id @default(uuid())
   userId    String
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   startDate DateTime
@@ -120,7 +123,7 @@ model TimeOff {
 }
 
 model Booking {
-  id            String        @id @default(cuid())
+  id            String        @id @default(uuid())
   tenantId      String
   tenant        Tenant        @relation(fields: [tenantId], references: [id], onDelete: Cascade)
   barberId      String
@@ -140,7 +143,7 @@ model Booking {
 }
 
 model BookingService {
-  id        String  @id @default(cuid())
+  id        String  @id @default(uuid())
   bookingId String
   booking   Booking @relation(fields: [bookingId], references: [id], onDelete: Cascade)
   serviceId String

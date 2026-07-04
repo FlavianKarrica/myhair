@@ -5,7 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { routing, type Locale } from "@/i18n/routing";
-import { LocaleSwitcher } from "@/components/locale-switcher";
+import { SiteHeader } from "@/components/site-header";
 import { AuthProvider } from "@/components/auth-provider";
 import "../globals.css";
 
@@ -56,12 +56,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <body className="min-h-full flex flex-col bg-zinc-50 text-zinc-900">
         <NextIntlClientProvider messages={messages}>
           <AuthProvider>
-            <header className="border-b border-zinc-200 bg-white">
-              <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
-                <span className="text-lg font-semibold tracking-tight">MyHair</span>
-                <LocaleSwitcher />
-              </div>
-            </header>
+            <SiteHeader />
             {children}
           </AuthProvider>
         </NextIntlClientProvider>

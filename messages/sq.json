@@ -9,6 +9,7 @@
     "delete": "Fshi",
     "edit": "Ndrysho",
     "back": "Kthehu",
+    "home": "Kryefaqja",
     "loading": "Duke u ngarkuar...",
     "error": "Ndodhi një gabim"
   },
@@ -47,7 +48,8 @@
     "password": "Fjalëkalimi",
     "signIn": "Hyr",
     "signingIn": "Duke u futur...",
-    "invalidCredentials": "Email ose fjalëkalim i gabuar."
+    "invalidCredentials": "Email ose fjalëkalim i gabuar.",
+    "back": "← Kthehu te faqja kryesore"
   },
   "admin": {
     "badge": "Super Admin",

@@ -4,10 +4,13 @@ import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 
-const labels: Record<Locale, string> = {
-  sq: "SQ",
-  en: "EN",
-};
+function langButtonClass(active: boolean) {
+  return `rounded-md px-2 py-1 text-xs font-medium transition ${
+    active
+      ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-950"
+      : "text-zinc-600 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800"
+  }`;
+}
 
 export function LocaleSwitcher() {
   const locale = useLocale() as Locale;
@@ -19,19 +22,15 @@ export function LocaleSwitcher() {
   }
 
   return (
-    <div className="flex gap-1 rounded-lg border border-zinc-200 p-1">
+    <div className="flex gap-1 rounded-lg border border-zinc-200 p-1 dark:border-zinc-700">
       {routing.locales.map((loc) => (
         <button
           key={loc}
           type="button"
           onClick={() => switchLocale(loc)}
-          className={`rounded-md px-2.5 py-1 text-xs font-medium transition-colors ${
-            locale === loc
-              ? "bg-zinc-900 text-white"
-              : "text-zinc-600 hover:bg-zinc-100"
-          }`}
+          className={langButtonClass(locale === loc)}
         >
-          {labels[loc]}
+          {loc.toUpperCase()}
         </button>
       ))}
     </div>

@@ -9,6 +9,7 @@
     "delete": "Delete",
     "edit": "Edit",
     "back": "Back",
+    "home": "Home",
     "loading": "Loading...",
     "error": "Something went wrong"
   },
@@ -47,7 +48,8 @@
     "password": "Password",
     "signIn": "Sign in",
     "signingIn": "Signing in...",
-    "invalidCredentials": "Invalid email or password."
+    "invalidCredentials": "Invalid email or password.",
+    "back": "← Back to home"
   },
   "admin": {
     "badge": "Super Admin",
